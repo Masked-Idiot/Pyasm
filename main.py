@@ -1,15 +1,25 @@
 from sys import argv as prgmargs
-file = open(prgmargs[1], "r")
+lines = []
+try:
+    file = open(prgmargs[1], "r")
+except:
+    interact = input()
+    while interact.split("!")[0] != "run":
+        lines.append(interact)
 ram = []
 for i in range(64):
     ram.append("")
 print(ram)
 def arglist(args):
     pass
-for line in file.readlines():
+for line in lines:
     tokens = line.split("!")
     print(tokens)
     if tokens[0] == "var":
+        pass
+    elif tokens[0] == "lbl":
+        pass
+    elif tokens[0] == "slc":
         pass
     elif tokens[0] == "say":
         pass
