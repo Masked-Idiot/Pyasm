@@ -1,7 +1,8 @@
 from sys import argv as prgmargs
 lines = []
 try:
-    file = open(prgmargs[1], "r")
+    with file as open(prgmargs[1], "r"):
+        lines = file.readlines()
 except:
     interact = input()
     while interact.split("!")[0] != "run":
