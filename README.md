@@ -1,2 +1,2 @@
 # Pyasm
-My version of assembly written in python and batch
+My version of assembly written in python
