@@ -18,6 +18,8 @@ for line in lines:
     print(tokens)
     if tokens[0] == "var":
         pass
+    elif tokens[0] == "ary":
+        pass
     elif tokens[0] == "lbl":
         pass
     elif tokens[0] == "slc":
